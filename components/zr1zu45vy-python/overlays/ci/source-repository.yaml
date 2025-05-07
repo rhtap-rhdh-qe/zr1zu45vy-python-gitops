@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: zr1zu45vy-python-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/zr1zu45vy-python

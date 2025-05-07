@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: zr1zu45vy-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: zr1zu45vy-python 
+  name: zr1zu45vy-python
+spec:
+  port:
+    targetPort: 8081 
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: zr1zu45vy-python
+    weight: 100 
